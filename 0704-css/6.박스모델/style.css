@@ -1,0 +1,23 @@
+*{
+  
+  padding: 0px; margin: 0px;
+  box-sizing: border-box;
+}
+h1{
+  border: 1px solid red;
+  /* border-style:dashed; 
+  border-radius: 5%;*/
+
+  border-top-left-radius: 5%; 
+  border-top-right-radius: 5%;
+  
+/* 위부터 시계방향으로 설정 가능 4군데 */
+  padding: 5px; 
+  margin: 10px;
+
+  width: 350px;
+  height: 300px;
+/* x축 y축 번짐 색상 */
+  box-shadow: 5px 10px 20px orange;
+
+}

@@ -1,0 +1,73 @@
+* {
+  
+  padding: 0px; margin: 0px;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  
+  background-color: yellow;
+  text-align: center;
+  
+}
+
+.밤비 {
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
+
+.container {
+ 
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 500px;
+}
+
+h2 {
+
+   padding-top: 20px;
+}
+ 
+.menu {
+
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px;
+  border-top: 1px solid #e7e2e2;
+  padding-top: 20px;
+
+}
+
+.채팅 {
+
+  width: 30px;
+  height: 30px;
+}
+.전화 {
+
+  width: 30px;
+  height: 30px;
+}
+.카메라 {
+
+  width: 30px;
+  height: 30px;
+}
+.쉼표 {
+
+  width: 30px;
+  height: 30px;
+}
+
+
+
+

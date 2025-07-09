@@ -1,0 +1,20 @@
+table {
+  width: 400px;
+  /* 칸 간격 조절 */
+  border-collapse: collapse;
+  border: 1px solid red;
+  /* 칸 너비 일정하게 - 단 , 테이블 너비값이 있어야함 */
+  table-layout: fixed;
+  /* 캡션 위치 */
+  caption-side:bottom;
+  /* 빈칸 없애기 */
+  empty-cells: hide;
+}
+td {
+  border: 1px solid red;
+}
+img {
+  /* 인라인,테이블 칸들에 이미지와 글씨의 위치를 조정하고 싶을때 vertical-align 사용 */
+  width: 50px;
+  vertical-align: middle;
+}

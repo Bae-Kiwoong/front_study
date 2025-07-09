@@ -1,0 +1,70 @@
+.parent {
+  border: 1px solid red;
+  display: flex;
+}
+.parent > div {
+  height: 100px;
+  /* width: 100px; */
+  background-color: aqua;
+  margin: 5px;
+}
+.child1 {
+  flex-shrink: 3;
+  flex-grow: 1;
+}
+.child2 {
+  flex-shrink: 2;
+  flex-grow: 2;
+}
+.child3 {
+  flex-shrink: 1;
+  flex-grow: 3;
+}
+/* flex-grow : 자식의 크기를 부모 기준으로 증가 비율로 나눔 지정된 비율값으로 고정 */
+/* flex-shrink : 감소 비율 */
+.parent2 {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+}
+.parent2 > div {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+  margin: 5px;
+  
+}
+.child4 {
+  /* flex: 1; */
+  /* order: 1; */
+  align-self: center;
+
+}
+.child5 {
+  flex: 1;
+/* order: 2; */
+}
+.child6 {
+  flex: 1;
+  /* order: 0; */
+
+}
+/* flex : 기본적 비율로 설정 */
+/* order : 순서 변경가능 */
+/* align-self : 자식한테 적용시 개체만 움직일수 있음 */
+.parent3 {
+  border: 1px solid red;
+  display: flex;
+}
+.parent3 > div {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+.child7 {
+  margin-right: auto;
+}
+.child8 {
+  margin: auto;
+}
+/* 자식개체에 마진 - 좌우센터 등을 주면 그 개체만 움직일수 있음. */

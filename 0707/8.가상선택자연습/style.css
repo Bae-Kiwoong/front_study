@@ -1,0 +1,63 @@
+* {
+  padding: 0px; margin: 0px;
+  box-sizing: border-box;
+}
+.login-form input:focus {
+  background: gray;
+}
+.pagination a:hover {
+  background: red;
+}
+.container div {
+  display:inline-block;
+  margin : 20px;
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s ease;
+
+}
+.container div:nth-child(1) {
+  background: springgreen;
+}
+.container div:nth-child(2) {
+  background-color: blue;
+}
+.container div:nth-child(3) {
+  background-color: brown;
+}
+.container div:nth-child(4) {
+  background-color: chartreuse;
+}
+.container div:hover {
+  box-shadow: 2px 2px 10px gray;
+  transform: scale(1.2);
+}
+
+
+/* 
+div {
+  display: inline;
+}
+
+
+
+
+ul {
+ list-style: none;
+    padding: 0;
+    display: flex;
+    
+}
+.num a {
+    display:inline;
+    padding: 1px 5px;
+    text-decoration: none;
+    
+  }
+.num a:hover {
+      background-color: #d60d0d;
+      color: white;
+  
+    }
+  
+     */

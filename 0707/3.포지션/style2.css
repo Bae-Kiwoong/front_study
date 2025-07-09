@@ -1,0 +1,49 @@
+body {
+  height: 3000px;
+}
+.fix {
+  width: 100px;
+  /* 브라우저 기준  포지션 - 픽스(고정) */
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+.sti {
+   background-color: rgba(148, 120, 120, 0.178);
+
+   position: sticky;
+   top:  0;
+   /* 앞뒤 순서를 정할수 있는 명령어 0이 제일 뒤 높을수록 앞 */
+   z-index: 99;
+}
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+
+}
+.container > div {
+  width: 100px;
+  height: 100px;
+  position:absolute;
+
+}
+.box1 {
+  background-color: aqua;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+}
+.box2 {
+  background-color: brown;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+.box3 {
+  background-color: yellow;
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+}

@@ -1,0 +1,23 @@
+* {
+  padding: 0px; margin: 0px;
+  box-sizing: border-box;
+}
+ul {
+ /* 인라인블록으로 인해 글 간격이 생김. 부모태그에서
+ 폰트 사이즈를 0 으로 잡아서 줄임.자식 클래스에서 폰트사이즈를
+ 다시 설정해줌 */
+  font-size: 0;
+}
+li {
+  font-size: 16px;
+  width:  100px;
+  height: 200px;
+  border: 1px solid red;
+  display:inline-block
+}
+.visi {
+  /* 숨김처리만 해줌.해당 영역은 남아있음 */
+  visibility: hidden;
+  /* 숨김 처리도 해주고 영역도 사라짐
+  display: none; */
+}

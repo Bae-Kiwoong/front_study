@@ -1,0 +1,40 @@
+p {
+  /* 글꼴 크기 기본 16px*/
+  font-size: 16px;
+  /* 글꼴 두께
+  lighter 100 
+  기본 400
+  bold 700
+  bolder 900*/
+  font-weight: 400;
+
+}
+body {
+  /* 줄간격 */
+  line-height: 2;
+  /* 글꼴 */
+  font-family: fantasy;
+  font-style: oblique;
+  /* 소문자를 대문자로 바꿈 */
+  font-variant: small-caps;
+}
+p {
+  font: italic bold 25px '굴림', ;
+}
+h5 {
+  /* 글꼴 색 넣는 방법*/
+  color: red;
+  color: #ff0000;
+  color: rgb(89, 4, 55);
+  /* 텍스트 효과 */
+  text-decoration: double;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 5px gray;
+  text-underline-position: auto ;
+  /* 자간 */
+  letter-spacing: 2px;
+  /* 단어 간격 */
+  word-spacing: 5px;
+  text-align: left;
+}

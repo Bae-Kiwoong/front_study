@@ -1,0 +1,43 @@
+div > p:first-child {
+  color: red;
+
+}
+div > p:last-child {
+  color: blue;
+}
+ /*child 는 중간에 다른 태그가 섞여 있으면 순번 인식해버림.  */
+div > h3:nth-child(odd) {
+  color: red;
+}
+/* of-type은 중간에 다른 태그가 있어도 무시함 */
+div > h3:nth-of-type(even) {
+  color: rgb(0, 26, 255);
+}
+#outer > h4:nth-child(5) {
+  color: red;
+
+}
+/* 기본 상태 - 페이지를 방문하지 않았을때 */
+a:link {
+  color: aqua;
+}
+/* 해당 페이지를 방문하면 적용 */
+a:visited {
+  color: red;
+}
+/* 마우스를 올려두면 */
+a:hover{
+  color: blue
+}
+a:active{
+  color: chartreuse;
+}
+a:focus{
+  color: rgb(238, 5, 199);
+}
+/* 범위 지정시 색상 바꾸기 */
+p::selection {
+  color: black;
+  background: gold;
+
+}

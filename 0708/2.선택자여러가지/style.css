@@ -1,0 +1,12 @@
+/* 동위(형제) 선택자 */
+/* 기준 요소 뒤부터 형제들을 선택함 */
+h1 ~ p {
+  background-color:red;
+}
+/* 기준 요소 뒤부터 가장 가까운 형제 하나 */
+h1 + p {
+  color: blue;
+}
+input[type="radio"]:checked {
+background-color: blue;
+}

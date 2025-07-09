@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="https://www.google.com/search" method="get">
+    <input type="text" name="q">
+    <input type="submit" value="검색">
+  </form>
+  <form>
+    <input type="text" size="5" maxlength="5" autofocus><br>
+    <input type="text" placeholder="비밀번호를 입력하세요"><br>
+    <input type="text" value="이름" readonly>
+    <input type="text" value="홍길동" disabled><br>
+    <input type="text" required>
+    
+    <input type="submit" value="전송">
+  </form>
+  <form>
+    텍스트 : <input type="text"><br>
+    비밀번호 : <input type="password"><br>
+    라디오버튼 : <input type="radio" name="yes-or-no" value="yes" checked> 예 
+               <input type="radio" name="yes-or-no" value="no"> 아니오 <br>
+    체크박스 : <input type="checkbox" name="chk" value="java"> JAVA
+              <input type="checkbox" name="chk" value="html" checked> HTML
+              <input type="checkbox" name="chk" value="css"> CSS
+              <input id="agree" type="checkbox">
+              <label for="agree">약관동의</label>
+
+    <br><br>
+    <input type="submit" value="전송">
+    <input type="reset" value="리셋">
+    <input type="button" value="버튼" onclick="alert('버튼을 눌렀네')">
+    <button>버튼3</button>
+<br><br>
+    <input type="file"><br>
+
+    <textarea rows="10" cols="40"></textarea><br>
+
+    <select>
+      <option value="red">빨강</option>
+      <option value="blue" selected> 파랑</option>
+      <option value="yellow">노랑</option>
+      <option value="green">초록</optio>
+
+    </select>
+    
+    <input type="hidden">
+    <input type="text" name="" id="">
+
+
+
+  </form>
+    
+
+
+
+  <!-- get - url뒤에 쿼리스트링 형태로 값을 전송.전송데이터 비밀 보장이 안됨.전송할수 있는 용량이 제한됨 
+  post - 값전송 자체가 요정 객체에 포함해서 보냄.보안이 유지되서 일반적으론 로그인.회언가입에 사용. 전송할수 있는 크기 제한이 없음
+   -->
+</body>
+</html>

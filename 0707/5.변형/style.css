@@ -1,0 +1,18 @@
+body {
+  padding: 150px;
+}
+div {
+  width: 50px;
+  height: 50px;
+  background: red;
+  /* 현재 위치를 기준으로 해당 요소를 이동  X , Y */
+  transform: translate(100px , 100px);
+  /* 요소의 크기를 변경 ( 배수가 들어감 ) */
+  transform: scale(2,2);
+  /* 요소의 각도 변경 */
+  transform: rotate(0deg);
+  /* 회전시 중심점 변경 가능 */
+  transform-origin: left top;
+  /* 요소의 기울기  */
+  transform: skew(0deg);
+}

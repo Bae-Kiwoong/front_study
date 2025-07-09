@@ -1,0 +1,35 @@
+.parent {
+  border: 1px solid red;
+  width: 600px;
+  height: 600px;
+  display:flex;
+
+}
+.child1 {
+  width: 600px;
+  height: 600px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.child2 {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child3 {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  align-self: center;
+  display: flex;
+}
+.child4 {
+  align-self: center;
+}
+

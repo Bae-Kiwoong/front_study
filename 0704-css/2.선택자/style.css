@@ -1,0 +1,19 @@
+/* 전체 선택자 */
+*{
+  color:black;
+  background-color:rgb(46, 48, 50);
+  
+}
+/* 태그 선택자 */
+h1 {
+  background-color:cornflowerblue
+}
+/* 아이디 선택자 */
+#title{
+  text-align: center;
+}
+/* 클래스 선택자(.이 클래스를 의미; ,여러선택자 적용; */
+.color,h3 {
+  font-size: 20px;
+  color: rgb(214, 7, 7);
+}

@@ -1,0 +1,28 @@
+* {
+  padding: 0px; margin: 0px;
+  box-sizing: border-box;
+}
+.menu {
+  background-color: rgb(187, 219, 211);
+  height: 100px; width: 500px;
+
+}
+.nav {
+  background-color: rgb(42, 188, 151);
+  float: left;
+  height: 300px; width: 100px;
+}
+.content {
+  background-color:rgb(167, 171, 159);
+  height: 300px; width: 500px;
+}
+.footer {
+  background-color: chartreuse;
+  float: bottom; height: 100px; width: 500px;
+}
+.T {
+  width: 500px; height: 500px;
+  margin:auto;
+ 
+  
+}

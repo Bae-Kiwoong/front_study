@@ -1,0 +1,11 @@
+/* 하위 선택자 */
+#first p {
+color: blue;
+}
+#second > p {
+  background-color:cadetblue;
+}
+/* #아이디 에 > 는 바로 밑 자식만 , 띄어쓰기는 밑 전체 */
+p.inner {
+  color: blueviolet;
+}

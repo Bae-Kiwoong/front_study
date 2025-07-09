@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+/* 그리드 고정 길이  
+  grid-template-columns: 200px 200px 200px; */
+  /* 가변 길이 ( 비율 ) 안에 든 내용물에 따라 달라짐*/
+/* grid-template-columns: 1fr 1fr 1fr; */
+/* 가변길이와 고정길이 조합 repeat 로 간편하게 사용 가능*/
+/* grid-template-columns:repeat(3, 1fr); */
+/* grid-template-rows: 100px 100px 100px; */
+/* row 와 columns 를 사용해서 세분확 가능 */
+gap: 5px;
+/* grid-auto-rows: minmax(100px, 300px); */
+/* 한칸의 너비는 200px로 할건데 한줄에 몇개넣을지는 안정함 */
+/* auto-fill , auto-fit 사용 가능 */
+grid-template-columns: repeat(3,200px);
+}
+
+
+.container > div {
+  background-color: red;
+  border: 1px solid black;
+}
+/* 첫번째 칸이 첫번째 줄부터 3번째 줄까지 가도록 함 ( 병합이랑은 다름) */
+.container > div:nth-child(1) {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}

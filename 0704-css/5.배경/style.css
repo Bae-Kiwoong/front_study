@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  background-image: url(/images/channels4_profile.jpg);
+  background-repeat: no-repeat; 
+  background-size:100%;
+  background-position: center center;
+  
+  background-attachment: fixed;
+ 
+}
+h1 {
+  background-color: rgba(249, 252, 251, 0.456);
+}
+p {
+  background-color: rgb(136, 197, 177);
+}
+.bg {
+  background-color: rgba(183, 161, 221, 0.582);
+}
