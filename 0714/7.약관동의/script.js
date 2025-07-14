@@ -8,29 +8,32 @@ console.log(boxHeight);
 
 const next = document.querySelector('.next');
 
+let isDisabled = true;
 
 box.addEventListener('scroll', function(){
   let scroll = box.scrollTop;
-  if( isDisabled && boxHeight + scroll > boxY - 5 ){
+  if( boxHeight + scroll > boxY - 5 ){
     document.querySelector('#chk').disabled = false;
     isDisabled = false;
   }
-})
-
-
-
-let isDisabled = true;
+});
 
 next.addEventListener('click', function(){
-  if(isDisabled == true){
-   alert(`약관에 동의하세요.`);
-   ( isDisabled && boxHeight + scroll > boxY - 5 );
-   document.querySelector('#chk').disabled = false;
-   isDisabled = false;
+  if(!isDisabled && chk.checked){
+   
+    alert(`다음 페이지로 이동합니다.`); 
   }else{
-    alert(`다음 페이지로 이동합니다.`);
-  }
- });
+    
+    alert(`약관에 동의하세요.`);
+   }
+  });
+  
+   
+     
+    
+
+
+
 
 
 
