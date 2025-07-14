@@ -29,7 +29,16 @@ for(let i=0; i<cart.length; i++){
 cart[i].addEventListener('click', function(e){
   let nameTag = e.target.previousElementSibling.previousElementSibling;
   let name = nameTag.innerHTML;
+  //로컬스토리지에서 꺼내옴
   let temp = localStorage.getItem('cart');
+
+  //장바구니에 넣으려는 과일이 로컬스토리지에 있는지 여부를 알려주는 변수
+  //비교 변수
+  let isHave = false;
+
+  //장바구니에 넣으려는 과일이 있으면 몇번째 인덱스에 있는지 알려주는 변수
+  //반복문으로 비교변수를 이용해서 찾으면 있는 배열을 빼줌
+  let index;
   
   
   if(temp !== null){
@@ -37,13 +46,27 @@ cart[i].addEventListener('click', function(e){
     // 로컬스토리지에 있으면 먼저 그 정보들을 꺼내와야 함
     // 문자열 형태이므로 원본인 배열로 되돌려줌
     temp = JSON.parse(temp);
-// 새로 장바구니에 담을 name을 추가
-    temp.push(name);
+
+    temp.forEach((data, i) =>{
+      if(data.name === name){
+        isHave = true;
+        index = i;
+      }
+        
+    })
+    // 위 반복문에서 기존에 있는지 없는지 검사를 끝냈음. 여부에 따라 다르게 처리
+    if(isHave){
+      temp[index].cnt++;
+    }else{
+      temp.push( {'name' : name ,'cnt' : 1});
+    }
+
+
 //다시 추가함
     localStorage.setItem('cart', JSON.stringify(temp));
 
-  }else {
-    localStorage.setItem('cart' , JSON.stringify([name]));
+  }else {//로컬스토리지 자체가 비어있을 경우 실행되는 else
+    localStorage.setItem('cart' , JSON.stringify([{'name': name,'cnt': 1}]));
   }
   
   
